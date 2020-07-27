@@ -89,6 +89,7 @@ def main(argv) :
         ra = road_area_detection(img_name);
         time.sleep(2)
 
+        # Experimentally set threshold to 67
         if (ra<=67.0):
             time.sleep(2)
             ArduinoSerial.write(b'A'); 
